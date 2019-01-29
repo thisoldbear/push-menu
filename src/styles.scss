@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-body;
+  color: $color-grey;
+  background-color: $color-peach;
+  background-image: url('topography.svg');
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+
+  @media only screen and (min-width: 480px) {
+    font-size: 22px;
+  }
+
+  & + p {
+    margin-top: 32px;
+  }
+
+  a {
+    color: $color-red;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.no-js {
+  border-top: 20px solid $color-red;
+}
+
+.jump-link {
+  display: block;
+  padding: 20px;
+}
+
+@import './components/page/styles';
+@import './components/push-menu/styles';

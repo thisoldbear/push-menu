@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Push Menu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /**
+       * Imported here as they were not importing in .scss files using Parcel
+       */
+      @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+      @import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC");
+    </style>
+  </head>
+  <body class="no-js">
+    <script>
+      // Remove no-js class a.s.a.p.
+      document.querySelector("body").classList.toggle("no-js");
+    </script>
+    <div class="wrapper">
+      <noscript>
+        <a href="#content" class="jump-link">Jump to Content</a>
+      </noscript>
+      <main class="page">
+        <nav class="push-menu" data-behavior="push-menu">
+          <button
+            class="push-menu__toggle"
+            data-binding="push-menu-toggle"
+            title="Toggle Main Menu"
+          >
+            <span class="push-menu__toggle-text">Toggle Menu</span>
+          </button>
+          <ul class="push-menu__list">
+            <li class="push-menu__list-item">
+              <a class="push-menu__link" href="#">Home</a>
+            </li>
+            <li class="push-menu__list-item push-menu__list-item--has-children">
+              <button class="push-menu__link" data-binding="push-menu-open-sub">
+                <span class="push-menu__link-arrow">&laquo;</span> Mountains
+              </button>
+              <ul class="push-menu__list push-menu__list--sub">
+                <li class="push-menu__list-item push-menu__list-item--back">
+                  <button
+                    class="push-menu__link"
+                    data-binding="push-menu-close-sub"
+                  >
+                    <span class="push-menu__link-arrow">&laquo;</span> Mountains
+                  </button>
+                </li>
+                <li class="push-menu__list-item">
+                  <a class="push-menu__link" href="#">Volcanoes</a>
+                </li>
+                <li class="push-menu__list-item">
+                  <a class="push-menu__link" href="#">Fold mountains</a>
+                </li>
+                <li class="push-menu__list-item">
+                  <a class="push-menu__link" href="#">Block mountains</a>
+                </li>
+              </ul>
+            </li>
+            <li class="push-menu__list-item">
+              <a class="push-menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="page__content" id="content">
+          <div class="page__content-inner">
+            <h1 class="page__heading">The Main Types of Mountains</h1>
+            <p>
+              There are three main types of mountains: volcanic, fold, and
+              block. All three types are formed from plate tectonics: when
+              portions of the Earth's crust move, crumple, and dive.
+              Compressional forces, isostatic uplift and intrusion of igneous
+              matter forces surface rock upward, creating a landform higher than
+              the surrounding features. The height of the feature makes it
+              either a hill or, if higher and steeper, a mountain. Major
+              mountains tend to occur in long linear arcs, indicating tectonic
+              plate boundaries and activity.
+            </p>
+            <p>
+              The highest known permanently tolerable altitude is at 5,950
+              metres (19,520 ft). At very high altitudes, the decreasing
+              atmospheric pressure means that less oxygen is available for
+              breathing, and there is less protection against solar radiation
+              (UV). Above 8,000 metres (26,000 ft) elevation, there is not
+              enough oxygen to support human life. This is known as the "death
+              zone". The summits of Mount Everest and K2 are in the death zone.
+            </p>
+            <p>
+              Words:
+              <a href="https://en.wikipedia.org/wiki/Mountain">Wikipedia</a>
+            </p>
+            <p>
+              Pattern: <a href="https://www.heropatterns.com/">Hero Patterns</a>
+            </p>
+            <p>Source: <a href="https://github.com/thisoldbear/push-menu">GitHub</a></p>
+          </div>
+        </article>
+      </main>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
