@@ -4,6 +4,10 @@
 
 I scaffolded the project with a [basic Parcel starter](https://github.com/thisoldbear/vanilla-parcel-starter) as this allowed me to use tech (Sass, JS modules, hot reloading) and a project structure I'm familiar with without reaching for something config heavy like Webpack.
 
+[Live demo](https://push-menu-thisoldbear.netlify.com)
+
+[Source](https://github.com/thisoldbear/push-menu)
+
 ### Install
 
 ```
